@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.grid-container {
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+
+  color: white;
+}
+
+
+.cell {
+  line-height: 75px;
+  text-align: left;
+  padding: 0 0.5em;
+  font-size: 2em;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.grid-container :nth-child(even) {
+  color: black;
+  background-color: lightgrey;
+}
+
+.grid-container :nth-child(odd) {
+  background-color: darkgray;
+}
+
+.el-2 {
+  border: 1px solid red;
+  grid-column: 3/6;
+  grid-row: 2/3;
+}
+
+.el-3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}

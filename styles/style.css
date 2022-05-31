@@ -28,6 +28,10 @@
   margin: 5px;
 }
 
+body {
+  background-color: aliceblue;
+}
+
 .grid-container :nth-child(even) {
   color: black;
   background-color: lightgrey;
